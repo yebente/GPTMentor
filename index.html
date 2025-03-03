@@ -7,9 +7,17 @@
 </head>
 <body>
     <p id="message">Hello World!</p>
-    
+
+    <button id="change-message">Change Message</button>
+
     <script>
-        document.getElementById("message").textContent="Hello, JavaScript!";
+        const button = document.querySelector("#change-message");
+        const message = document.querySelector("#message");
+
+        button.addEventListener("click", function(){
+            message.textContent="Text Changed";
+        })
+
     </script>
 </body>
 

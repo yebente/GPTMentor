@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add another button labeled "Reset" below the first button.
+        When clicked, it should change the text inside <p> back to "Hello World!".
+    -->
+    <p id="message">Hello World</p>
+    <button id="change-message">Change Text</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        const changeButton = document.querySelector("#change-message");
+        const ressetButton = document.querySelector("#reset")
+        const message = document.querySelector("#message");
+
+        changeButton.addEventListener("click", function(){
+            message.textContent="Hello JavaScript";
+
+        ressetButton.addEventListener("click", function(){
+            message.textContent="Hello World";
+        })
+        })
+    </script>
+
+    </body>
+</html>
